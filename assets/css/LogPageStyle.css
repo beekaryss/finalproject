@@ -1,0 +1,187 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.intro{
+    max-height: 100vh;
+    overflow: hidden;
+    background: url('../AdminPage/wallhaven-ey2ogw.jpg') center no-repeat;
+    background-size: cover;
+
+}
+.backVideo{
+    position: relative;
+    z-index: 1;
+    padding-bottom: 56.25%;
+}
+.videoPlayer{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.mainContent{
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.container{
+    width: 0px;
+    height: 0px;
+    display: none;
+    margin-right: auto;
+    margin-left: auto;
+    background: rgba(255, 255, 255, .7);
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 20px;
+}
+#RegisterFormDiv{
+    text-align: center;
+    width: 100%;
+}
+.container input[type=text], input[type=password], input[type=email], .containerLogForm input[type=email], input[type=password]{
+    width: 400px;
+    border-radius: 7px;
+    outline: none;
+    border: darkgrey 1px solid;
+    padding: 10px;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+.container input:nth-of-type(1), .container input:nth-of-type(2){
+    width: 198px;
+}
+.container input[type=radio]{
+    width: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#genderRegFormDiv{
+    height: 30px;
+    text-align: left;
+    width: 66%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: -20px;
+}
+.container #RegisterFormDiv label:nth-of-type(1){
+    margin-right: 120px;
+}
+.container #RegisterFormDiv label:nth-of-type(2){
+    margin-right: 45px;
+}
+.container #RegisterFormDiv label:nth-of-type(3){
+    margin-right: 120px;
+}
+.container #RegisterFormDiv label:nth-of-type(4){
+    margin-right: 88px;
+}
+.container #RegisterFormDiv label:nth-of-type(5){
+    margin-right: 16px;
+}
+.container #RegisterFormDiv label:nth-of-type(6){
+    margin-right: 110px;
+}
+.container button, .containerLogForm button{
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: #1F1F1F;
+    background-color: #1F1F1F;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 15px;
+    transition-duration: 0.2s;
+    font-size: 17px;
+}
+.container button:hover, .containerLogForm button:hover{
+    background-color: #5E5E5E;
+}
+.container hr{
+    margin-left: 0;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 850px;
+}
+.container h3, .containerLogForm h3{
+    font-size: 40px;
+    margin-bottom: 5px;
+}
+#divH3LogIn h3{
+    margin: 0;
+}
+#divH3LogIn{
+    width: 100%;
+    text-align: center;
+}
+#LogInForm{
+    text-align: center;
+}
+#LogInForm input{
+    width: 350px;
+}
+#LogInForm h3{
+    margin-left: 160px;
+}
+#LogInForm label:nth-of-type(1){
+    margin-right: 50px;
+    margin-left: 0;
+}
+#LogInForm label:nth-of-type(2) {
+    margin-right: 24px;
+    margin-left: 0px;
+}
+#LogInForm button{
+    margin-left: 0;
+}
+.container span, .containerLogForm span{
+    font-size: 17px;
+}
+.container span a, .containerLogForm span a{
+    color: #5E5E5E;
+}
+#LogInForm img{
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+}
+.containerLogForm{
+    background: rgba(255, 255, 255, .7);
+    margin-left: auto;
+    margin-right: auto;
+    width: 0px;
+    height: 0px;
+    display: none;
+    padding-top: 30px;
+    border-radius: 15px;
+}
+#divForH3InReg{
+    display: inline-block;
+}
+#RegisterFormDiv img{
+    vertical-align: middle;
+    display: inline-block;
+    width: 55px;
+    height: 60px;
+    margin-left: 10px;
+}

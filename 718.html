@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Porsche 718</title>
+    <link rel="shortcut icon" href="assets/images/porsche%20logo.png" type="image/png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=35c1b1c7-1b83-4700-9167-d5fd1dff2af4" type="text/javascript"></script>
+    <script src="assets/Scripts/siteScript.js"></script>
+</head>
+<body onload="checkUserDataLine()">
+<header class="header">
+	<div class="container">
+        <div class="header__inner">
+            <div class="header__logo"><a href="#"><img src="assets\images\porsche logo.png"></a></div>
+
+            <nav class="nav">
+                <a class="nav__link" href="home.html">Home</a>
+                <a class="nav__link" onclick="scrollButId(2)">Location</a>
+                <a class="nav__link" onclick="scrollButId(2)">Contact</a>
+                <a class="" id="UserNameLogProf"></a>
+            </nav>
+        </div>
+    </div>
+</header>
+<section class="section__one">
+    <div class="container">
+        <div class="section__header">
+            <h2>PORSCHE 718</h2>
+        </div>
+
+
+<!--    BEGIN THE MAIN PART OF THE SITE  (  SECTION  )   -->
+<div class="section">
+    <div class="container">  
+
+        <div class="about">
+
+            <div class="about__item car">
+                <div class="about__img">
+                    <a href="#"><img src="assets\images\718\7181.jpg"></a>
+                    <div class="about__text"><a>718</a></div>
+                </div>
+                <div> <!--  Just about the 718   -->
+                    <p>300 PS   Power (PS)</p>
+                    <P>4.7 s Acceleration 0-100 km/h with Sport Chrono Package</P>
+                    <p>274 km/h  Top speed</p>
+                    <p>€46.790</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, '718')">BUY</a></p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(2, '718')">Submit your application</a></p>
+                </div>
+            </div>
+
+
+            <div class="about__item car">
+                <div class="about__img">
+                    <a href="#"><img src="assets\images\718\7182.jpg"></a>
+                    <div class="about__text"><a>718 Cayman T</a></div>
+                </div>
+                <div> <!--  about 718 cayman t -->
+                    <p>300 PS   Power (PS)</p>
+                    <p>4.7 s Acceleration 0-100 km/h with Sport Chrono Package</p>
+                    <P>274 km/h</P>
+                    <p>€54.358</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, '718 Cayman T')">BUY</a></p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(2, '718 Cayman T')">Submit your application</a></p>
+                </div>  
+            </div>
+
+
+            <div class="about__item car">
+               <div class="about__img">
+                   <a href="#"><img src="assets\images\718\7183.jpeg"></a>
+                   <div class="about__text"><a>718 Cayman GT4</a></div>
+                </div>
+                <div> <!-- about Cayenne e-hibrid   -->
+                    <p>420 PS   Power combined (PS)</p>
+                    <p>4.4 s Acceleration 0-100 km/h with Sport Chrono Package</p>
+                    <P>303 km/h top speed</P>
+                    <p>€75.348</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, '718 Cayman GT4')">BUY</a></p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(2, '718 Cayman GT4')">Submit your application</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--   INFORMATION ABOUT COMPANY    -->
+         <div class="ab__com">
+            <div class="ab__item">
+                <img src="assets\images\718\7184.webp">
+            </div>
+            
+
+            <div class="ab__item">
+                <p>For those people, we have fitted the new 718 Cayman GT4 with everything which makes your pulse race. 4.0-litre six- cylinder horizontally opposed and naturally aspirated engine with 420PS, manual transmission, rear wing. With a diffuser which demands respect, and extremely effective aerodynamics. GT3 technology for the chassis and the interior – motorsport genes. The result is a brutal driving machine which has never even heard of autonomous driving.</p>
+            </div>
+        </div>
+
+
+        <div class="ab__com">
+            <div class="ab__item">
+                <p>With the 4.0-litre displacement, the engine generates a mighty 309kW (420PS) – 35PS more than the previous model. The maximum engine speed? 8,000rpm. The maximum torque of 420Nm is from 5,000 to 6,800rpm. Meaning the new 718 Cayman GT4 sprints from 0 to 62mph in just 4.4 seconds. The maximum speed: above 188 mph.</p>
+            </div>
+
+            <div class="ab__item">
+                <img src="assets\images\718\7185.webp">
+            </div>
+        </div>
+<!--      END OF THE ABOUT THE COMPANY    -->
+    </div>
+</section>
+
+<!--      FOOTER PORT OF THE WEB     -->
+<footer class="footer">
+    <a name="footercon"></a><div class="container"><div class="footer__inner">
+    <div class="footer__col footer__col--first"><div class="footer__logo">Porsche</div>
+        <div class="footer__text">The car dealership provides a full range of services for the sale of Porsche
+            cars, original spare parts and accessories, as well as service and repair. You can choose your dream car
+            from the Porsche lineup, go through a test drive, get a loan and insurance.</div>
+        <div class="footer__soc"><div class="footer__soc-header"><b>Follow us</b></div>
+            <div class="footer__soc-content"><a href="https://twitter.com/Porsche" target="black">
+                <img src="assets\\icons\\twetter.png"></a><a href="https://www.instagram.com/porsche/" target="black">
+                <img src="assets\\icons\\insta.png"></a><a href="https://www.facebook.com/groups/PorscheForumGlobal/" target="black">
+                <img src="assets\\icons\\facebook.png"></a><a href="https://vk.com/porschecom?from=quick_search" target="black">
+                <img src="assets\\icons\\vk.png"></a></div></div></div><div class="footer__col footer__col--second">
+    <div class="footer__title">Contacts</div><p>+77028214939</p><p>porsche_kazakhstan@gmail.com</p><p>porsche_almaty@gmail.com</p>
+    <p>Developers:</p><p>Bokenkhabyl Aidar</p><p>Alzhan Bekarys</p></div><div class="footer__col footer__col--third">
+    <div class="footer__title">Location</div><div id="map"></div></div></div></div>
+</footer>
+
+</body>
+</html>

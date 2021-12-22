@@ -1,0 +1,704 @@
+    *{
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body, html{
+    background-image: url("../AdminPage/wallhaven-nrqyzq.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    transition: background 1s ease;
+}
+#allEl{
+    display: flex;
+    position: relative;
+}
+/* Navigation */
+#allEl #menu{
+    overflow: hidden;
+    position: fixed;
+    margin-left: -250px;
+}
+#allEl #menu #visible{
+    width: 250px;
+    height: 100%;
+    background: rgba(255, 255, 255, .7);
+    padding: 30px 0px;
+    position: fixed;
+}
+#allEl #menu #visible img{
+    margin-top: 40px;
+    width: 250px;
+    height: 150px;
+}
+#allEl #menu #visible h2{
+    color: black;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+#allEl #menu #visible ul li{
+    padding: 15px;
+    display: block;
+    color: black;
+    cursor: pointer;
+    transition: .15s;
+}
+#allEl #menu #visible ul li:hover{
+    background-color: #5E5E5E;
+    color: white;
+}
+/*/////////////////////////////////////*/
+/*Register or Add User*/
+#allEl #main{
+    width: 100%;
+    margin-left: 0px;
+}
+
+#allEl #main #head{
+    padding: 20px;
+    background: #fff;
+    border-bottom: 1px solid #e0e4e8;
+
+}
+
+#allEl #main #mainTypeIn{
+    margin: 20px;
+    line-height: 25px;
+}
+
+#allEl #main #mainTypeIn #divForRegForm{
+    background-color: rgba(255, 255, 255, .7);
+    width: 0px;
+    height: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+#regForm input[type=text], input[type=password], input[type=email]{
+    width: 400px;
+    border-radius: 7px;
+    outline: none;
+    border: darkgrey 1px solid;
+    padding: 10px;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+#regForm input:nth-of-type(1), #regForm input:nth-of-type(2){
+    width: 187.5px;
+}
+
+#regForm input[type=radio], input[type=checkbox]{
+    width: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+#regForm input[type=checkbox]{
+    width: 15px;
+    height: 15px;
+}
+#regForm label:nth-of-type(1), #regForm label:nth-of-type(3){
+    margin-right: 80px;
+}
+#regForm label:nth-of-type(2){
+    margin-right: 20px;
+}
+#regForm label:nth-of-type(4){
+    margin-right: 55px;
+}
+#regForm label:nth-of-type(5){
+    margin-right: 70px;
+}
+#regForm label:nth-of-type(6){
+    margin-right: 15px;
+    margin-left: 15px;
+}
+#regForm label:nth-of-type(7){
+    margin-right: 10px;
+}
+#addUser{
+    width: 360px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: #1F1F1F;
+    background-color: #1F1F1F;
+    color: white;
+    cursor: pointer;
+    margin-left: 100px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    transition-duration: 0.2s;
+}
+#addUser:hover{
+    background-color: #5E5E5E;
+}
+#regUp{
+    width: 530px;
+    margin-bottom: 10px;
+}
+#hForm{
+    margin-left: 15px;
+    margin-bottom: 20px;
+    font-size: 27px;
+}
+#textAreaReasonForRegForm{
+    margin-top: 10px;
+    outline: none;
+    font-size: 15px;
+    padding: 5px 5px 0px 5px;
+    border-radius: 8px;
+}
+/*/////////////////////////////////////////////////////*/
+
+#allEl #main #mainTypeIn #divUserList{
+    background-color: rgba(255, 255, 255, .7);
+    width: 0px;
+    height: 0px;
+    padding-left: 10px;
+    padding-right: 15px;
+    padding-top: 20px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+#allEl #main #mainTypeIn #divUserList #UserListTable{
+    margin-top: 10px;
+    overflow: auto;
+    height: 500px;
+}
+#allEl #main #mainTypeIn #divUserList #UserListTable table tr{
+    height: 30px;
+    text-align: center;
+}
+
+#allEl #main #mainTypeIn #divUserList #UserListTable table td{
+    border-right: 1px dashed black;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+#allEl #main #mainTypeIn #divUserList #UserListTable table td:nth-of-type(6){
+    border-right: none;
+}
+#allEl #main #mainTypeIn #divUserList label{
+    font-size: 20px;
+    margin-left: 20px;
+}
+#allEl #main #mainTypeIn #divUserList input{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 28px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+#allEl #main #mainTypeIn #divUserList hr{
+    width: 990px;
+}
+/*////////////////////////////////////////////////*/
+/*Update User data*/
+#allEl #main #mainTypeIn #divForUpdateData{
+    background-color: rgba(255, 255, 255, .7);
+    width: 0px;
+    height: 0px;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: block;
+}
+#allEl #main #mainTypeIn #divForUpdateData label{
+    font-size: 17px;
+    margin-left: 80px;
+}
+#allEl #main #mainTypeIn #divForUpdateData #selected{
+    font-size: 17px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 28px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+#allEl #main #mainTypeIn #divForUpdateData #toUpdate{
+    width: 100px;
+    height: 32px;
+    border-radius: 5px;
+    outline: none;
+    border: #1F1F1F;
+    background-color: #1F1F1F;
+    color: white;
+    cursor: pointer;
+    margin-left: 10px;
+    margin-top: 10px;
+    transition-duration: 0.2s;
+}
+#allEl #main #mainTypeIn #divForUpdateData #toUpdate:hover{
+    background-color: #5E5E5E;
+}
+
+#formToUpdate input[type=text], input[type=password], input[type=email]{
+    width: 403px;
+    border-radius: 7px;
+    outline: none;
+    border: darkgrey 1px solid;
+    padding: 10px;
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+#formToUpdate input:nth-of-type(1), #formToUpdate input:nth-of-type(2){
+    width: 187.5px;
+}
+
+#formToUpdate input[type=checkbox]{
+    width: 15px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    padding: 10px;
+    height: 15px;
+}
+#formToUpdate label:nth-of-type(1){
+    margin-right: 85px;
+}
+#formToUpdate label:nth-of-type(2){
+    margin-right: 17px;
+}
+#formToUpdate label:nth-of-type(3){
+    margin-right: 54px;
+}
+#formToUpdate label:nth-of-type(4){
+    margin-right: 30px;
+}
+#userUpdate{
+    width: 300px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: #1F1F1F;
+    background-color: #1F1F1F;
+    color: white;
+    cursor: pointer;
+    margin-left: 80px;
+    margin-top: 10px;
+    transition-duration: 0.2s;
+    margin-bottom: 15px;
+}
+#userUpdate:hover{
+    background-color: #5E5E5E;
+}
+#UpdateHr{
+    width: 790px;
+    margin-bottom: 20px;
+}
+#textAreaReason{
+    margin-top: 10px;
+    margin-left: 80px;
+    outline: none;
+    font-size: 15px;
+    padding: 5px 5px 0px 5px;
+    border-radius: 8px;
+}
+/*////////////////////////////////////////////////////*/
+/*divForDeleteUser*/
+#allEl #main #mainTypeIn #divForDeleteUser{
+    background-color: rgba(255, 255, 255, .7);
+    width: 0px;
+    height: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: none;
+}
+#allEl #main #mainTypeIn #divForDeleteUser label{
+    font-size: 15px;
+    margin-right: 10px;
+}
+#allEl #main #mainTypeIn #divForDeleteUser input{
+    width: 350px;
+    height: 30px;
+    font-size: 15px;
+    margin-right: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: darkgrey 1px solid;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#allEl #main #mainTypeIn #divForDeleteUser button{
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    outline: none;
+    border: #1F1F1F;
+    background-color: #1F1F1F;
+    color: white;
+    cursor: pointer;
+    transition-duration: 0.2s;
+    margin-bottom: 15px;
+}
+#allEl #main #mainTypeIn #divForDeleteUser button:hover{
+    background-color: #5E5E5E;
+}
+
+#allEl #main #mainTypeIn #SiteSettings{
+    background-color: rgba(255, 255, 255, .7);
+    width: 0px;
+    height: 0px;
+    padding-left: 15px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: none;
+}
+#allEl #main #mainTypeIn #SiteSettings h2{
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+#allEl #main #mainTypeIn #SiteSettings img{
+    width: 200px;
+    height: 140px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+#allEl #main #mainTypeIn #SiteSettings img:hover{
+    transition: 0.3s;
+    box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2), 0 20px 20px 0 rgba(0, 0, 0, 0.2);
+}
+#out{
+    width: 90px;
+    height: 25px;
+    padding: 1px 1px 1px 1px;
+    background: black;
+    opacity: .6;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 480px;
+}
+#in{
+    width: 40px;
+    height: 25px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 0px;
+    text-align: center;
+}
+#searchUser{
+    display: inline-block;
+}
+#allEl #main #mainTypeIn #divUserList #UserListTable table tr{
+    height: 30px;
+    text-align: center;
+}
+
+#allEl #main #mainTypeIn #divUserList #UserListTable table th{
+    border-right: 1px dashed black;
+}
+#allEl #main #mainTypeIn #divUserList #UserListTable table th:nth-of-type(1){
+    width: 33px;
+}
+#allEl #main #mainTypeIn #divUserList #UserListTable table th:nth-of-type(2){
+    width: 210px;
+}
+#allEl #main #mainTypeIn #divUserList #UserListTable table th:nth-of-type(3){
+    width: 261px;
+}
+#allEl #main #mainTypeIn #divUserList #UserListTable table th:nth-of-type(4){
+    width: 171px;
+}
+#allEl #main #mainTypeIn #divUserList #UserListTable table th:nth-of-type(5){
+    width: 220px;
+}
+#allEl #main #mainTypeIn #divUserList #UserListTable table th:nth-of-type(6){
+    border: none;
+}
+#ListAllUsersJSRes{
+    margin: 0;
+    padding: 0;
+}
+
+/******************************************************/
+#openMenuImage{
+    height: 25px;
+    width: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+    opacity: .7;
+}
+
+#readCommentDiv{
+    background-color: rgba(255, 255, 255, .7);
+    width: 0px;
+    height: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    font-size: 16px;
+    display: none;
+}
+
+#readCommentDiv textarea{
+    border-radius: 10px;
+    outline: none;
+    padding: 5px;
+    font-size: 14px;
+}
+
+#readCommentDiv hr{
+    width: 970px;
+}
+
+#readCommentDiv th:nth-of-type(1), #readCommentDiv td:nth-of-type(1){
+    width: 300px;
+    text-align: center;
+}
+#readCommentDiv th:nth-of-type(2), #readCommentDiv td:nth-of-type(2){
+    width: 650px;
+    text-align: center;
+}
+#samReadComment{
+    overflow: auto;
+    height: 500px;
+}
+
+#divForRequestsAdmin{
+    background-color: rgba(255, 255, 255, .7);
+    width: 0px;
+    height: 0px;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: none;
+}
+#divForRequestsAdmin th, #divForRequestsAdmin td{
+    border-right: 1px dashed black;
+    text-align: center;
+    overflow: auto;
+}
+#divForRequestsAdmin td{
+    height: 150px;
+}
+#divForRequestsAdmin th:nth-of-type(1), #divForRequestsAdmin td:nth-of-type(1){
+    width: 30px;
+    max-width: 30px;
+}
+#divForRequestsAdmin th:nth-of-type(2), #divForRequestsAdmin td:nth-of-type(2){
+    width: 220px;
+    max-width: 220px;
+}
+#divForRequestsAdmin th:nth-of-type(3), #divForRequestsAdmin td:nth-of-type(3){
+    width: 170px;
+    max-width: 170px;
+}
+#divForRequestsAdmin th:nth-of-type(4), #divForRequestsAdmin td:nth-of-type(4){
+    width: 250px;
+    max-width: 250px;
+}
+#divForRequestsAdmin th:nth-of-type(5), #divForRequestsAdmin td:nth-of-type(5){
+    width: 250px;
+    max-width: 250px;
+    border: none;
+}
+#divForRequestsAdmin hr{
+    width: 965px;
+}
+#samDivForRequestsAdmin{
+    overflow: auto;
+    height: 450px;
+    width: 965px;
+}
+#divForRequestsAdmin input{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 28px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+#divForRequestsAdmin label{
+    font-size: 20px;
+    margin-left: 20px;
+}
+#divForRequestsAdmin textarea{
+    margin: 0;
+}
+#divForRequestsAdmin button{
+    width: 100px;
+    height: 25px;
+    border: none;
+    background: black;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#divForRequestsAdmin button:hover{
+    background: #5E5E5E;
+}
+
+#divForRequestsAdmin textarea{
+    outline: none;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+}
+#divForDisableEnable{
+    background-color: rgba(255, 255, 255, .7);
+    width: 0px;
+    height: 0px;
+    padding-left: 10px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: none;
+}
+
+#divForDisableEnable input{
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid black;
+    height: 28px;
+    padding-left: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    outline: none;
+}
+#divForDisableEnable label{
+    font-size: 20px;
+    margin-left: 20px;
+}
+#divForDisableEnable hr{
+    width: 670px;
+}
+#divForDisableEnable th, #divForDisableEnable td{
+    overflow: auto;
+    text-align: center;
+    border-right: 1px dashed black;
+}
+#divForDisableEnable td{
+    height: 40px;
+}
+#divForDisableEnable th:nth-of-type(1), #divForDisableEnable td:nth-of-type(1){
+    width: 50px;
+}
+#divForDisableEnable th:nth-of-type(2), #divForDisableEnable td:nth-of-type(2){
+    width: 400px;
+}
+#divForDisableEnable th:nth-of-type(3), #divForDisableEnable td:nth-of-type(3){
+    width: 200px;
+}
+#divForDisableEnable button{
+    width: 70px;
+    height: 25px;
+    vertical-align: middle;
+    border: none;
+    background: black;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+#divForDisableEnable button:hover{
+    background: #5E5E5E;
+}
+#samDivForDisableEnable{
+    height: 460px;
+    overflow: auto;
+}
+#outNew{
+    width: 90px;
+    height: 25px;
+    padding: 1px 1px 1px 1px;
+    background: black;
+    opacity: .6;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+#inNew{
+    width: 40px;
+    height: 25px;
+    background: white;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-left: 0px;
+    text-align: center;
+}
+
+#divForDisableBlock {
+    background-color: rgba(255, 255, 255, .7);
+    width: 0px;
+    height: 0px;
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    display: none;
+    text-align: center;
+    overflow: auto;
+}
+#divForDisableBlock h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+#divForDisableBlock textarea{
+    outline: none;
+    border-radius: 10px;
+    border: none;
+    padding: 5px 5px 5px 5px;
+    font-size: 15px;
+    margin: 0;
+}
+#divForDisableBlock button{
+    width: 100px;
+    height: 25px;
+    border: none;
+    background: black;
+    color: white;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-left: 10px;
+}
+#divForDisableBlock button:nth-of-type(1){
+    margin-left: 480px;
+}
+#divForDisableBlock button:hover{
+    background: #5E5E5E;
+}
