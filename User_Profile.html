@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <link href="assets/css/ProfileStyle.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/Scripts/siteScript.js"></script>
+</head>
+<body onload="getUserNameForProf(); loadRequests();">
+    <header>
+        
+    </header>
+    <main>
+        <div id="container">
+            <div class="headTitlesBlock" onclick="editStyleUp(1)">My requests</div>
+            <div class="headTitlesBlock" onclick="editStyleUp(2)">Feedback</div>
+            <div class="headTitlesBlock" onclick="window.location.replace('home.html')">Back</div>
+            <div id="UserNameDataProfile"></div>
+            <div id="mainContent">
+                <div id="userProfileStatements">
+                    <div id="divForSearchListResProf">
+                        <label>Search:</label>
+                        <input type="text" placeholder="Write something to search...">
+                    </div><hr>
+                    <table id="tableForHead">
+                        <tbody>
+                            <tr><th>№</th><th>Type</th><th>Car</th><th>Answer</th></tr>
+                        </tbody>
+                    </table>
+                    <hr>
+                    <div id="allListUserListProf">
+                        <table id="tableForAllResultsProfile">
+                            <tbody>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr>
+                </div>
+                <div id="commentsAdminUserProf">
+                    <h3>Leave your review</h3>
+                    <textarea rows="18" cols="120"></textarea>
+                    <div id="buttonUserProf">
+                        <button onclick="saveCommentUser()">Save</button>
+                        <button onclick="$('#commentsAdminUserProf textarea').val('')">Clear</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

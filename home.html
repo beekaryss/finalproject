@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <meta name="viewport" content="width=device-width", initial-scale=1>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
+    <title>Camera Store</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=35c1b1c7-1b83-4700-9167-d5fd1dff2af4" type="text/javascript"></script>
+    <script src="assets/Scripts/siteScript.js"></script>
+</head>
+<body onload="checkUserDataLine()">
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo"><img src="assets\images\icon.png" style="width: 10%;" onclick="scrollButId(0)"></a></div>
+
+            <nav class="nav">
+                <a class="nav__link" onclick="scrollButId(1)">Cameras</a>
+                <a class="nav__link" onclick="scrollButId(2)">Location</a>
+                <a class="nav__link" onclick="scrollButId(2)">Contact</a>
+                <a class="" id="UserNameLogProf"></a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+<div class="intro">
+    <div class="container">
+        <div class="intro__inner">
+            <h1 class="intro__title">Camera Store</h1>
+            <a class="button" onclick="scrollButId(3)">More</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!--    BEGIN THE MAIN PART OF THE SITE  (  SECTION  )   -->
+<div class="section">
+    <div class="container">
+
+        <div class="section__header">
+            <h3><a name="cameras"></a></h3>
+            <h2>CAMERAS</h2>
+        </div>
+        
+
+        <div class="about">
+
+            <div class="about__item">
+                <div class="about__img">
+                    <a href="sony.html"><img src="assets\images\Sony\sony1.jpeg"></a>
+                    <div class="about__text"><a>Sony</a></div>
+                </div>
+            </div>
+
+            <div class="about__item">
+                <div class="about__img">
+                    <a href="canon.html"><img src="assets\images\Canon\canon7.jpg"></a>
+                    <div class="about__text"><a>Canon</a></div>
+                </div>
+            </div>
+
+            <div class="about__item">
+               <div class="about__img">
+                   <a href="nikon.html"><img src="assets\images\Nikon\nik.png"></a>
+                   <div class="about__text"><a>Nikon</a></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+   
+
+
+</div>
+
+
+
+<section class="section">
+    <div class="container">
+        <div class="section__header">
+            <h2><a name="Aboutus"></a>Video Cameras</h2>
+
+            <div class="section__text">
+                <p>Video camera - the original meaning is a combination of a television transmission camera and a video recorder. Subsequently, the word "video camera" practically supplanted the words "television camera" and "television camera" (TV camera), replacing them. For the first time, the word "camcorder" began to be used in relation to miniature hand-held television cameras intended for recording home video on a household video recorder. After the appearance of a combination of a transmitting TV camera and a VCR - camcorders intended for television journalism, the word "camcorder" also entered into professional use.</p>
+            </div>
+        </div>
+
+
+         <div class="ab__com">
+            <div class="ab__item">
+                <img src="assets\images\camera.jpg">
+            </div>
+            
+
+            <div class="ab__item">
+                <p>The first television cameras used a mechanical device to scan the image - the Nipkow disk; they were used in experimental television broadcasts from 1910 to 1930. After the 1930s, the Nipkov system was supplanted by completely electronic designs based on transmitting television tubes, for example, the iconoscope Vladimir Zworykin or the dissector Philo Farnsworth.</p>
+            </div>
+        </div>
+
+        <div class="ab__com">
+            <div class="ab__item">
+                <img src="assets\images\camera2.jpg">
+            </div>  
+            
+
+            <div class="ab__item">
+                <p>Advances in video compression have also contributed to digital camcorders, as high demands on memory and bandwidth made uncompressed video unrealistic. The most important compression algorithm in this regard is Discrete Cosine Transform, a lossy compression technique that was first proposed in 1972.</p>
+            </div>
+        </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!--      FOOTER PORT OF THE WEB     -->
+<footer class="footer">
+    <a name="footercon"></a><div class="container"><div class="footer__inner">
+    <div class="footer__col footer__col--first"><div class="footer__logo">Sony</div>
+        <div class="footer__text">The range of Sony - TVs, audio and video equipment, portable electronics, cameras, camcorders, laptops, tablets, phones, game consoles and many others.</div>
+        <div class="footer__soc"><div class="footer__soc-header"><b>Follow</b></div>
+            <div class="footer__soc-content"><a href="https://twitter.com/sony?lang=ru" target="black">
+                <img src="assets\\icons\\twetter.png"></a><a href="https://www.instagram.com/sony/?hl=ru" target="black">
+                <img src="assets\\icons\\insta.png"></a><a href="https://www.facebook.com/Sony/" target="black">
+                <img src="assets\\icons\\facebook.png"></a><a href="https://www.facebook.com/Sony/" target="black">
+                <img src="assets\\icons\\vk.png"></a></div></div></div><div class="footer__col footer__col--second">
+    <div class="footer__title">Contacts</div><p>+7 707 833 68 04</p><p>sony.kz@gmail.com</p><p>sony.global@gmail.com</p>
+    <p>Developers:</p><p>Bokenkhabyl Aidar</p><p>Alzhan Bekarys</p></div><div class="footer__col footer__col--third">
+    <div class="footer__title">Location</div><div id="map"></div></div></div></div>
+</footer>
+
+</body>
+</html>

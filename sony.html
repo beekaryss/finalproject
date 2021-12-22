@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Sony Cameras</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=35c1b1c7-1b83-4700-9167-d5fd1dff2af4" type="text/javascript"></script>
+    <script src="assets/Scripts/siteScript.js"></script>
+</head>
+
+<body onload="checkUserDataLine()">
+<!--   HEADER PART   -->
+<header class="header">
+	<div class="container">
+        <div class="header__inner">
+            <div class="header__logo"><a href="#"><img src="assets\images\sonylogo.png" style="width: 38%;"></a></div>
+
+            <nav class="nav">
+                <a class="nav__link" href="home.html">Home</a>
+                <a class="nav__link" onclick="scrollButId(2)">Location</a>
+                <a class="nav__link" onclick="scrollButId(2)">Contact</a>
+                <a class="" id="UserNameLogProf"></a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+<section class="section__one">
+    <div class="container">
+        <div class="section__header">
+            <h2>SONY CAMERAS</h2>
+        </div>
+
+
+<!--    BEGIN THE MAIN PART OF THE SITE  (  SECTION  )   -->
+<div class="section">
+    <div class="container">  
+
+        <div class="about">
+
+            <div class="about__item car">
+                <div class="about__img">
+                    <a href="#"><img src="assets\images\Sony\a7.jpg"></a>
+                    <div class="about__text"><a>Sony A7</a></div>
+                </div>
+                <div> <!--  Just about the cayenne   -->
+                    <p>24.3MP full frame sensor</p>
+                    <P>Beautiful shape. Reliable functions</P>
+                    <p>Α7 weighs only 416g with battery</p>
+                    <p>1370,75$</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, 'Sony A7')">BUY</a></p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(2, 'Sony A7')">Submit your application</a></p>
+                </div>
+            </div>
+
+            <div class="about__item car">
+                <div class="about__img">
+                    <a href="#"><img src="assets\images\Sony\a6400.jpg"></a>
+                    <div class="about__text"><a>Sony A6400</a></div>
+                </div>
+                <div> 
+                    <p>35mm equivalent focal lengthr 105 mm</p>
+                    <p>Ample opportunities for realizing creative potential</p>
+                    <P>24.2MP</P>
+                    <p>1010,85$</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, 'Sony 6400')">BUY</a></p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(2, 'Sony 6400')">Submit your application</a></p>
+                </div>
+            </div>
+
+            <div class="about__item car">
+               <div class="about__img">
+                   <a href="#"><img src="assets\images\Sony\action.jpg"></a>
+                   <div class="about__text"><a>Sony Action</a></div>
+                </div>
+                <div> <!-- about Cayenne e-hibrid   -->
+                    <p>4K Ultra HD for 4x the detail</p>
+                    <p>Shoot clear, impactful first-person movies with the enhanced Action Cam</p>
+                    <P>Power supply with RM-LVR3</P>
+                    <p>503,42$</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, 'Sony Action')">BUY</a></p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(2, 'Sony Action')">Submit your application</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!--   INFORMATION ABOUT COMPANY    -->
+         <div class="ab__com">
+            <div class="ab__item">
+                <img src="assets\images\Sony\sony2.jpg">
+            </div>
+            
+
+            <div class="ab__item">
+                <p>Life in motion. Shoot a video and share it with friends and family. From the first goal of your son to the ascent to the first summit, you will live in the present while saving it for the future.</p>
+            </div>
+        </div>
+
+
+        <div class="ab__com">
+            <div class="ab__item">
+                <p>Sony offers a wide range of digital cameras called Cyber-shot, while DSLRs are Alpha. Sony also manufactures action cameras and camcorders, and cinematic-grade products are sold under the CineAlta brand.Sony showed off the Sony Mavica prototype in 1981 and released it to the consumer market in 1988.The first Cyber-shot was introduced in 1996.</p>
+            </div>
+
+            <div class="ab__item">
+                <img src="assets\images\Sony\sony3.jpg">
+            </div> 
+        </div>
+<!--      END OF THE ABOUT THE COMPANY    -->
+    </div>
+</section>
+
+
+<!--      FOOTER PORT OF THE WEB     -->
+<footer class="footer">
+    <a name="footercon"></a><div class="container"><div class="footer__inner">
+    <div class="footer__col footer__col--first"><div class="footer__logo">Sony</div>
+        <div class="footer__text">The range of Sony - TVs, audio and video equipment, portable electronics, cameras, camcorders, laptops, tablets, phones, game consoles and many others.</div>
+        <div class="footer__soc"><div class="footer__soc-header"><b>Follow</b></div>
+            <div class="footer__soc-content"><a href="https://twitter.com/sony?lang=ru" target="black">
+                <img src="assets\\icons\\twetter.png"></a><a href="https://www.instagram.com/sony/?hl=ru" target="black">
+                <img src="assets\\icons\\insta.png"></a><a href="https://www.facebook.com/Sony/" target="black">
+                <img src="assets\\icons\\facebook.png"></a><a href="https://www.facebook.com/Sony/" target="black">
+                <img src="assets\\icons\\vk.png"></a></div></div></div><div class="footer__col footer__col--second">
+    <div class="footer__title">Contacts</div><p>+7 707 833 68 04</p><p>sony.kz@gmail.com</p><p>sony.global@gmail.com</p>
+    <p>Developers:</p><p>Bokenkhabyl Aidar</p><p>Alzhan Bekarys</p></div><div class="footer__col footer__col--third">
+    <div class="footer__title">Location</div><div id="map"></div></div></div></div>
+</footer>
+
+</body>
+</html>

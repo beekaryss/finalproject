@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Nikon</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=35c1b1c7-1b83-4700-9167-d5fd1dff2af4" type="text/javascript"></script>
+    <script src="assets/Scripts/siteScript.js"></script>
+</head>
+
+<body onload="checkUserDataLine()">
+
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="header__logo"><img src="assets\images\icon.png" style="width: 10%;" onclick="scrollButId(0)"></a></div>
+
+            <nav class="nav">
+                <a class="nav__link" href="home.html">Home</a>
+                <a class="nav__link" onclick="scrollButId(2)">Location</a>
+                <a class="nav__link" onclick="scrollButId(2)">Contact</a>
+                <a class="" id="UserNameLogProf"></a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+<section class="section__one">
+    <div class="container">
+        <div class="section__header">
+            <h2>Nikon</h2>
+        </div>
+
+
+
+<div class="section">
+    <div class="container">  
+
+        <div class="about">
+
+            <div class="about__item car">
+                <div class="about__img">
+                    <a href="#"><img src="assets\images\Nikon\nikon2.jpg"></a>
+                    <div class="about__text"><a>Nikon Coolpix P7800</a></div>
+                </div>
+                <div>
+                    <p>High-aperture optics f / 2.0 - 4.0</p>
+                    <P>Providing a stable picture throughout the 7x optical zoom</P>
+                    <p>12 megapixel CMOS sensor</p>
+                    <p>₽25.000</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, 'Nikon P7800')">BUY</a></p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(2, 'Nikon P7800')">Submit your application</a></p>
+                </div>
+            </div>
+
+            <div class="about__item car">
+                <div class="about__img">
+                    <a href="#"><img src="assets\images\Nikon\nikon3.jpg"></a>
+                    <div class="about__text"><a>Nikon Coolpix S8100</a></div>
+                </div>
+                <div> 
+                    <p>Equipped with extra-low dispersion (ED) glass</p>
+                    <p>Supports Full HD 1080p recording with stereo sound</p>
+                    <P>Image processing EXPEED C2</P>
+                    <p>₽15.990</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, 'Nikon S8100')">BUY</a></p>
+                     <p><a class="button__1" onclick="submitActionUserBuy(2, 'Nikon S8100')">Submit your application</a></p>
+                </div>
+            </div>
+
+            <div class="about__item car">
+               <div class="about__img">
+                   <a href="#"><img src="assets\images\Nikon\nikon4.jpg"></a>
+                   <div class="about__text"><a>Nikon D7100</a></div>
+                </div>
+                <div> 
+                    <p>The device has a CMOS - DX size matrix - 23.5x15.6 mm</p>
+                    <p>Model resolution - 24.1 megapixels</p>
+                    <P>Precise focus on the subject and has an ultra-clear LCD display.</P>
+                    <p>₽55.790</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, 'Nikon D7100')">BUY</a></p>
+                     <p><a class="button__1" onclick="submitActionUserBuy(2, 'Nikon D7100')">Submit your application</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<section>
+
+        <div class="ab__com">
+            <div class="ab__item">
+                <img src="assets\images\Nikon\nikon5.jpg">
+            </div>
+            
+
+            <div class="ab__item">
+                <p>Nikon Corporation (Japanese 株式会社 ニ コ ン kabushiki gaysa nikon, pronounced “Nikon” (inf.)) Is a Japanese company specializing in the optical-mechanical and electronic production of devices for image registration, mainly cameras and lenses. One of the world's largest leaders in the development of optical devices and the manufacture of optical glass.</p>
+            </div>
+        </div>
+
+
+        <div class="ab__com">
+            <div class="ab__item">
+                <p>Nikon is part of the Mitsubishi Group. Founded by Kōgaku Kōgyō on July 25, 1917 under the name Nippon Kogaku K.K. (Nippon Kogaku Kabushiki Kaisha), renamed in 1988. President - Kazuo Ushida. Headquarters in Tokyo.</p>
+            </div>
+
+            <div class="ab__item">
+                <img src="assets\images\Nikon\nikon6.jpg">
+            </div> 
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <a name="footercon"></a><div class="container"><div class="footer__inner">
+    <div class="footer_col footercol--first"><div class="footer_logo">Nikon</div>
+        <div class="footer__text">Nikon Corporation was founded in 1917 by the merger of three optical equipment manufacturers (Seisakusho, Iwaki Glass Co, Fujii Lens) into a fully integrated company called Nippon Kogaku Kokyo K.K. The company produced optical instruments for the Japanese navy.</div>
+        <div class="footer_soc"><div class="footer_soc-header"><b>Follow us</b></div>
+            <div class="footer__soc-content"><a href="https://twitter.com/NikonUSA?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="black">
+                <img src="assets\\icons\\twetter.png"></a><a href="https://www.instagram.com/nikonrussia/" target="black">
+                <img src="assets\\icons\\insta.png"></a><a href="https://www.facebook.com/nikon/" target="black">
+                <img src="assets\\icons\\facebook.png"></a><a href="https://vk.com/nikon_club" target="black">
+                <img src="assets\\icons\\vk.png"></a></div></div></div><div class="footer_col footer_col--second">
+    <div class="footer__title">Contacts</div><p>+77078336804</p><p>nikon_kazakhstan@gmail.com</p><p>nikon_almaty@gmail.com</p>
+    <p>Developers:</p><p>Bokenkhabyl Aidar</p><p>Alzhan Bekarys</p></div><div class="footer_col footer_col--third">
+</footer>
+
+</body>
+</html>

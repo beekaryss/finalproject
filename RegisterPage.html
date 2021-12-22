@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration</title>
+    <link rel="stylesheet" href="assets/css/LogPageStyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="assets/Scripts/AdminPageScript.js"></script>
+</head>
+<body onload="openForForInRegFormUser()">
+    <div class="intro">
+        <div class="backVideo">
+            <img src="https://cdn.pixabay.com/photo/2014/10/16/09/15/lens-490806_960_720.jpg" style="width: 100%;">
+        </div>
+        <div class="mainContent">
+            <div class="container">
+                <div id="RegisterFormDiv">
+                    <div id="divForH3InReg"><h3>Register form</h3></div>
+                    <hr>
+                    <form onsubmit="return RegistrationPageUser()" action="LogInPage.html">
+                        <label>Name:</label><input type="text" placeholder="First name" id="firstNameRegPage" pattern="^[A-Za-z. ]{3,40}" required>
+                        <input type="text" placeholder="Last name" id="lastNameRegPage" pattern="^[A-Za-z. ]{3,40}" required><br>
+                        <label>Phone number:</label><input type="text" id="phoneNumRegPage" pattern="^7\d{9}$|^7\d{2}\s\d{3}\s\d{2}\s\d{2}$" placeholder="775 778 21 41" required><br>
+                        <label>E-mail:</label><input type="email" id="emailRegPage" placeholder="example@gmail.com" pattern="^[a-z0-9](\.?[a-z0-9]){5,}@gmail\.com?$|^[a-z0-9](\.?[a-z0-9]){5,}@mail\.ru?$" required><br>
+                        <label>Password:</label><input type="password" id="passRegPage" placeholder="password" pattern="\w{8,}"><br>
+                        <label>Confirm password:</label><input type="password" id="rePassRegPage" placeholder="password"><br>
+                        <div id="genderRegFormDiv"><label>Gender:</label>Male <input type="radio" name="genderRegPage" value="Male">
+                        Female <input type="radio" name="genderRegPage" value="Female">
+                            Other <input type="radio" name="genderRegPage" value="Other" checked></div><br><hr>
+                        <button>Register</button><br>
+                        <span>Do you have account?<a href="LogInPage.html"> Log In</a></span>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

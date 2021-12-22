@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Montserrat:400,700&amp;subset=cyrillic-ext" rel="stylesheet">
+    <title>Canon</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="shortcut icon" href="assets/images/icon.png" type="image/png">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=35c1b1c7-1b83-4700-9167-d5fd1dff2af4" type="text/javascript"></script>
+    <script src="assets/Scripts/siteScript.js"></script>
+</head>
+
+<body onload="checkUserDataLine()">
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+           <div class="header__logo"><img src="assets\images\icon.png" style="width: 10%;" onclick="scrollButId(0)"></a></div>
+
+            <nav class="nav">
+                <a class="nav__link" href="home.html">Home</a>
+                <a class="nav__link" onclick="scrollButId(2)">Location</a>
+                <a class="nav__link" onclick="scrollButId(2)">Contact</a>
+                <a class="" id="UserNameLogProf"></a>
+            </nav>
+        </div>
+    </div>
+</header>
+
+
+
+
+
+<section class="section__one">
+    <div class="container">
+        <div class="section__header">
+            <h2>Canon</h2>
+        </div>
+
+
+
+<div class="section">
+    <div class="container">  
+
+        <div class="about">
+
+            <div class="about__item car">
+                <div class="about__img">
+                    <a href="#"><img src="assets\images\Canon\canon2.jpg"></a>
+                    <div class="about__text"><a>Canon PowerShot G1 X Mark III</a></div>
+                </div>
+                <div> 
+                    <p>The first flagship compact / mirrorless camera in one</p>
+                    <P>The convenience of use</P>
+                    <p>Working iso 6400 even with such a lens</p>
+                    <p>₽68.990</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, 'Canon G1')">BUY</a></p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(2, 'Canon G1')">Submit your application</a></p>
+                </div>
+            </div>
+
+            <div class="about__item car">
+                <div class="about__img">
+                    <a href="#"><img src="assets\images\Canon\canon3.jpg"></a>
+                    <div class="about__text"><a>Canon EOS R5</a></div>
+                </div>
+                <div> 
+                    <p>45-megapixel sensor</p>
+                    <P>5-axis stabilization with a range of 8 stops of exposure</P>
+                    <p>RAW video in 8K resolution</p>
+                    <p>₽350.000</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, 'Canon EOS R5')">BUY</a></p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(2, 'Canon EOS R5')">Submit your application</a></p>
+                </div>
+            </div>
+
+            <div class="about__item car">
+               <div class="about__img">
+                   <a href="#"><img src="assets\images\Canon\canon4.jpg"></a>
+                   <div class="about__text"><a>Canon PowerShot M6 Mark II</a></div>
+                </div>
+                <div> 
+                    <p>Screen and its design (flip, selfie mode, touch)</p>
+                    <p>422 10bit capability</p>
+                    <P>Native EFM optics</P>
+                    <p>₽62.990</p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(1, 'Canon M6')">BUY</a></p>
+                    <p><a class="button__1" onclick="submitActionUserBuy(2, 'Canon M6')">Submit your application</a></p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+         <div class="ab__com">
+            <div class="ab__item">
+                <img src="assets\images\Canon\canon5.jpg">
+            </div>
+            
+
+            <div class="ab__item">
+                <p>Canon (キ ヤ ノ ン 株式会社 Kyanon kabushiki-gaisha, "Canon") is a multinational engineering company headquartered in Tokyo, Japan. It is engaged in the optical-mechanical and electronic production of devices for fixing, processing and printing images, medical diagnostic equipment, as well as the development of solutions in the field of information technology and television broadcasting. </p>
+            </div>
+        </div>
+
+
+        <div class="ab__com">
+            <div class="ab__item">
+                <p>Canon sponsors a number of international community organizations, including the International Red Cross and WWF. The company also takes part in cultural and sports events, including the World Press Photo competition and the UEFA Europa League.</p>
+            </div>
+
+            <div class="ab__item">
+                <img src="assets\images\Canon\canon6.jpg">
+            </div> 
+        </div>
+
+    </div>
+</section>
+
+<footer class="footer">
+    <a name="footercon"></a><div class="container"><div class="footer__inner">
+    <div class="footer_col footercol--first"><div class="footer_logo">Canon</div>
+        <div class="footer__text">At the end of 2016, the Canon group of companies included 367 consolidated subsidiaries, and it employs about 198 thousand people around the world. In addition to selling products under its own brand, Canon manufactures laser printers for HP Inc., sold under the HP LaserJet Printers brand.</div>
+        <div class="footer_soc"><div class="footer_soc-header"><b>Follow us</b></div>
+            <div class="footer__soc-content"><a href="https://twitter.com/canonusa" target="black">
+                <img src="assets\\icons\\twetter.png"></a><a href="https://www.instagram.com/canonusa/" target="black">
+                <img src="assets\\icons\\insta.png"></a><a href="https://www.facebook.com/CanonRussia/" target="black">
+                <img src="assets\\icons\\facebook.png"></a><a href="https://vk.com/canon.russia" target="black">
+                <img src="assets\\icons\\vk.png"></a></div></div></div><div class="footer_col footer_col--second">
+    <div class="footer__title">Contacts</div><p>+7707 763 06 77</p><p>canon_kazakhstan@gmail.com</p><p>canon_almaty@gmail.com</p>
+    <p>Developers:</p><p>Bokenkhabyl Aidar</p><p>Alzhan Bekarys</p></div><div class="footer_col footer_col--third">
+</footer>
+
+</body>
+</html>
